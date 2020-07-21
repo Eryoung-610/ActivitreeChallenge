@@ -2,46 +2,14 @@ body {
     font-family: Noto Sans JP,sans-serif;
 }
 
-nav ul a:hover {
-    background-color: rgba(0, 0, 0, 0) !important;
-}
-
-#logo {
-    height:36px;
-    width:36px;
-    position: absolute;
-    top:22%;
-}
-
-#navBar{
-    width:65%;
-    margin: 0 auto;
-    margin-top: 2rem;
+#particles-js{
+    height:1300px;
 }
 
 #fixedImg{
-    margin-top: 3em;
+    margin-top: 2em;
     position:fixed;
     height:56px;
     width:73px;
-}
-
-#cover {
-    min-height: calc(93vh);
-    width:65%;
-    margin: 0 auto;
-    color: #27303B;
-}
-
-#about{
-    min-height: 62vh;
-}
-
-.test {
-    font-weight: 900;
-}
-
-.menu {
-    color: #27303B;
-    font-weight:700;
+    left:0;
 }

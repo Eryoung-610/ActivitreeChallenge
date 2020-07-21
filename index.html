@@ -10,46 +10,28 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- MDC -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
     <title>Nicole Saidy | UX Designer</title>
 </head>
 
 <body>
-
-    <img src="https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png" id="fixedImg" alt="">
-
-    <!-- NavBar -->
-    <header>
-        <br>
-        <nav class="white z-depth-0">
-            <div class="nav-wrapper" id="navBar">
-                <img id="logo" src="https://nicolesaidy.com/images/logo.svg" alt="" class="left">
+    <a href="https://onepagelove.com/nicole-saidy">
+        <img src="https://s3.amazonaws.com/onepagelove/one-page-love-award-retina-left.png" id="fixedImg" alt="Award fixed photo">
+    </a>
+    <div id = "particles-js"></div>
 
 
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="menu" href="sass.html">Blog</a></li>
-                    <li><a class="menu" href="badges.html">Course</a></li>
-                    <li><a class="menu" href="collapsible.html">Mentor</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Cover div -->
-    <div class="valign-wrapper" id="cover">
-        <h1 class="test">Hi! I'm Nicole. <br>I design stuff. </h1>
-    </div>
+ <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    <!-- About Div -->
-    <div class = "" id = "about">
-
-    </div>
-
+ <script>
+     particlesJS.load('particles-js','particles.json', function() {
+         console.log('particles working');
+     })
+ </script>
 </body>
 
 </html>
