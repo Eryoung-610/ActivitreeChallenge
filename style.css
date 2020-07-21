@@ -2,12 +2,42 @@ body {
     font-family: Noto Sans JP,sans-serif;
 }
 
-#particles-js{
-    height:1300px;
+nav{
+    margin-top:2em;
+    line-height:36px;
 }
 
+.myContainer{
+    width:65%;
+    margin: 0 auto;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.logo {
+    height:36px;
+    width:36px;
+}
+
+.particles{
+    height:1300px;
+    z-index: -1;
+    position: absolute;
+    width:100%;
+}
+
+#particles-js{
+    height:1350px;
+    width:100%;
+    z-index:-1;
+    position: absolute;
+}
+
+
 #fixedImg{
-    margin-top: 2em;
+    margin-top: 2.5em;
     position:fixed;
     height:56px;
     width:73px;
