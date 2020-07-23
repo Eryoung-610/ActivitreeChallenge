@@ -86,6 +86,26 @@ nav ul a:hover {
     color:#27303B;
 }
 
+.work{
+    background-color: rgb(245,249,249);
+    border:2px solid red;
+}
+
+.workTitle{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size:48px;
+}
+
+.workCard{
+    padding:0px;
+}
+
+.row .col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #particles-js{
     height:1350px;
     width:100%;
