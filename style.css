@@ -8,7 +8,7 @@ nav{
 }
 
 .myContainer{
-    width:65%;
+    width:67%;
     margin: 0 auto;
 }
 
@@ -20,9 +20,44 @@ nav ul a:hover {
     font-weight: 700;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
 .logo {
     height:36px;
     width:36px;
+}
+
+.card{
+    height:425px !important;
+}
+
+.card-content{
+    height:500px;
+    padding-bottom: 10px;
+}
+
+.card-image{
+    height:300px !important;
+    overflow: hidden;
+}
+
+.card-title{
+    color:rgb(39,48,59);
+    font-weight: 700 !important;
+    font-size: 28px;
+}
+
+.card-description{
+    color: rgb(82,97,115);
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.work .firstRow {
+    margin-top: 5em;
 }
 
 .particles{
@@ -38,14 +73,44 @@ nav ul a:hover {
 
 .about{
     min-height: 64vh;
-    display:flex;
-    justify-content: space-between;
 }
 
 .aboutText{
     font-weight: 400;
     line-height: 43px;
     letter-spacing: -.2px;
+}
+
+.blog, .talks{
+    min-height: calc(100vh);
+}
+
+.seeAllbtn{
+    min-height: calc(12vh);
+}
+.courseSection{
+    font-size: 48px;
+    font-weight: 700;
+    color: #27303B;
+}
+
+#onlinePhoto{
+    height:100%;
+    width:100%;
+}
+
+#seeAll{
+    font-size: 16px;
+    font-weight: 600;
+    color:white;
+    border-radius:30px;
+    background-image: linear-gradient(-133deg,#7282eb,#74aee3);
+    text-transform: none;
+}
+
+#seeAll:hover{
+    transition: .45s;
+    background-image: linear-gradient(-133deg,#7282eb,#7282eb);
 }
 
 .skills{
@@ -87,12 +152,18 @@ nav ul a:hover {
 }
 
 .work{
-    background-color: rgb(245,249,249);
-    border:2px solid red;
+    background-color:rgb(245, 247, 249);
+}
+
+.workCategory{
+    font-size:12px;
+    font-weight:600;
+    color: rgb(163,175,191);
+    margin-bottom:7px;
 }
 
 .workTitle{
-    padding-top: 20px;
+    padding-top: 2em;
     font-weight: 700;
     font-size:48px;
 }
@@ -101,9 +172,51 @@ nav ul a:hover {
     padding:0px;
 }
 
+.blog .talks{
+    min-height: calc(100vh);
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.connectText{
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-weight: 900;
+    line-height: 1.4;
+    font-size: 68px;
+}
+
+.connect{
+    color:white;
+    background-image: linear-gradient(-133deg,#7282eb,#74aee3);
+    min-height: calc(94vh);
+}
+
+.connectDescription{
+    margin-bottom: 15px;
+    line-height: 32px;
+    letter-spacing: -.2px;
+    width:500px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
 .row .col {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.horizontal {
+    height:250px !important;
+}
+
+#onlineCoursePhoto{
+    height:100%;
+    width:auto;
+    overflow: hidden;
 }
 
 #particles-js{
@@ -121,3 +234,16 @@ nav ul a:hover {
     width:73px;
     left:0;
 }
+
+@media (max-width: 990px) {
+    .resizeimg {
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .resizeimg {
+      width: auto;
+      height: 350px;
+    }
+  }
