@@ -14,6 +14,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -31,6 +33,36 @@
         <div id="particles-js"></div>
     </div>
 
+    <!-- Course Modal -->
+    <div id="modal" class="modal valign-wrapper center-align">
+        <h5 class="modal-close btn-floating" id="close"><svg fill="#526173" width="20" height="20" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+            </svg></h5>
+        <div class="container modal-content valign-wrapper center-align">
+            <div class="modal-content">
+                <h1 class="modalTitle center-align">Become a UI/UX Designer</h1>
+
+                <p class="modalDescription">I made an online course for overwhelmed beginners who want to kickstart
+                    their design career. Want in?
+                    Subscribe here!</p>
+                <div class="modalDescription">
+                    <form action="" class="input-field">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Email</label>
+                        <a href="#" class="btn signUp">Sign up</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
     <!-- Header -->
     <header>
         <br>
@@ -39,7 +71,7 @@
                 <img class="logo valign-w" src="https://nicolesaidy.com/images/logo.svg" alt="Logo">
                 <ul id="nav-mobile" class="menu right">
                     <li><a class="black-text" href="https://blog.nicolesaidy.com/">Blog</a></li>
-                    <li><a class="black-text" href="badges.html">Course</a></li>
+                    <li><a class="black-text modal-trigger" href="#modal">Course</a></li>
                     <li><a class="black-text" href="https://www.rookieup.com/nicolesaidy/">Mentor</a></li>
                 </ul>
             </div>
@@ -59,7 +91,7 @@
     <br>
     <div class="myContainer">
         <div class="row about">
-            <div class="col s6 m5 l6 center-align" id="test">
+            <div class="col s6 m5 l6 center-align">
                 <img class="circle" src="https://nicolesaidy.com/images/profile.jpg" alt="Portrait picture">
             </div>
             <div class="col s12 m8 l6">
@@ -202,7 +234,7 @@
     <!-- Work -->
     <div class="work">
         <div class="myContainer ">
-            <h2 class="workTitle">Some of my work</h2>
+            <h2 class="workCover">Some of my work</h2>
 
             <div class="row firstRow">
 
@@ -287,74 +319,82 @@
             <h2 class="courseSection">My online courses</h2>
         </div>
 
-        <div class="row">
-            <div class="col s12 m6 l12">
-                <div class="card horizontal">
-                  <div class="card-image2">
-                    <img src="https://nicolesaidy.com/images/podia-course.jpg" id = "onlineCoursePhoto">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <p>I am a very simple card. I am good at containing small bits of information.</p>
+        <div class="workGrid">
+            <div class="skills">
+                <div class="row">
+                    <div class="col s12 m2 l4">
+                        <div class="hoverable">
+                            <a href="https://store.nicolesaidy.com/become-a-ui-ux-designer"><img
+                                    src="https://nicolesaidy.com/images/podia-course.jpg" class="course-image"></a>
+                        </div>
                     </div>
-                    <div class="card-action">
-                      <a href="#">This is a link</a>
+                    <div class="col s12 m4 l8">
+                        <div class="skill">
+                            <a href="https://store.nicolesaidy.com/become-a-ui-ux-designer" class="onlineText">
+                                <h4>Become a UI/UX
+                                    designer
+                            </a></h4>
+                            <p class="onlineSubtext">The complete design course for non-designers</p>
+                            <p class="onlineDescription">Kickstart your design career with this self-paced online course
+                                includuing 3 hours of valuable information and precious downloadable resources.
+                            </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 m6 l12">
-                <div class="card horizontal">
-                  <div class="card-image2">
-                    <img src="https://nicolesaidy.com/images/podia-course.jpg" id = "onlineCoursePhoto">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <p>I am a very simple card. I am good at containing small bits of information.</p>
+            <div class="row">
+                <div class="col s12 m2 l4">
+                    <div class="hoverable">
+                        <a href="https://skl.sh/2DnMY8X"><img
+                                src="https://nicolesaidy.com/images/skillshare-coursev2.jpg" class="course-image"></a>
                     </div>
-                    <div class="card-action">
-                      <a href="#">This is a link</a>
+                </div>
+                <div class="col s12 m4 l8">
+                    <div class="skill">
+                        <a href="https://skl.sh/2DnMY8X" class="onlineText">
+                            <h4>Streamline your workflow
+                        </a></h4>
+                        <p class="onlineSubtext">The efficient UI/UX design process in Figma</p>
+                        <p class="onlineDescription">Create a consistent and scalable prototype in Figma in 30mins, from
+                            wireframing all the way to handing off to developers.
+                        </p>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
     </div>
 
+    </div>
+
     <!-- Blog -->
     <div class="work blog valign-wrapper">
         <div class="myContainer ">
-            <h2 class="workTitle">On my blog</h2>
+            <h2 class="workCover">On my blog</h2>
 
-            <div class = "row">
-                <div class = "col s12 m6 l6">
+            <div class="row">
+                <div class="col s12 m6 l6">
                     <div class="card medium hoverable">
                         <div class="card-image">
-                            <img src="https://nicolesaidy.com/images/webdash.jpg">
+                            <img src="https://nicolesaidy.com/images/steps-designer.jpg">
                         </div>
                         <div class="card-content">
-                            <p class="workCategory">UI/UX &ensp; BRANDING</p>
-                            <span class="card-title">Web Dash</span>
-                            <p class="card-description">Designed Logo, brand identity, landing page and web app for
-                                Webdash, the customizable
-                                web dashboard.</p>
+
+                            <span class="card-title">7 steps to become a UI/UX designer</span>
+                            <p class="card-description">What is good design and bad design? Here are tips & resources to
+                                help you get started.</p>
                         </div>
                     </div>
                 </div>
-                <div class = "col s12 m6 l6">
+                <div class="col s12 m6 l6">
                     <div class="card medium hoverable">
                         <div class="card-image">
-                            <img src="https://nicolesaidy.com/images/webdash.jpg">
+                            <img src="https://nicolesaidy.com/images/freelancer.jpg">
                         </div>
                         <div class="card-content">
-                            <p class="workCategory">UI/UX &ensp; BRANDING</p>
-                            <span class="card-title">Web Dash</span>
-                            <p class="card-description">Designed Logo, brand identity, landing page and web app for
-                                Webdash, the customizable
-                                web dashboard.</p>
+
+                            <span class="card-title">5 apps I can't live without as a freelancer</span>
+                            <p class="card-description">Life is too short for a 9 to 5 job. Making a living as a
+                                freelancer is the best way there is.</p>
                         </div>
                     </div>
                 </div>
@@ -362,57 +402,93 @@
 
 
             <div class="seeAllbtn valign-wrapper">
-                <a class="btn-large hoverable" id="seeAll">See all my projects</a>
+                <a class="btn-large hoverable" id="seeAll">Read more</a>
             </div>
         </div>
     </div>
 
     <!-- Talks -->
-    <div class = "myContainer talks valign-wrapper center-align">
-        <h2 class = "workTitle">Some of my talks</h2>
+    <div class="myContainer talks valign-wrapper">
+        <div class="row ">
 
-        <div class = "row">
-            <div class = "col s12 m3 l4">
+            <h2 class="workCover col s12 l12 m12">Some of my talks</h2>
+
+            <div class="col s12 m3 l4 workCard">
                 <div>
-                    <h5>Designing great progressive web apps</h5>
+                    <h5 class="workTitle">Designing great progressive web apps</h5>
                 </div>
-                <p>A look into PWAs from a design perspective, and guidelines for designing great PWAs.</p>
+                <p class="workText">A look into PWAs from a design perspective, and guidelines for designing great PWAs.
+                </p>
             </div>
-            <div class = "col s12 m3 l4">
+            <div class="col s12 m3 l4 workCard">
                 <div>
-                    <h5>Designing great progressive web apps</h5>
+                    <h5 class="workTitle">UX patterns for web developers</h5>
                 </div>
-                <p>Developer-friendly UX patterns that developers should start using in their everyday code.</p>
+                <p class="workText">Developer-friendly UX patterns that developers should start using in their everyday
+                    code.</p>
             </div>
-            <div class = "col s12 m3 l4">
+            <div class="col s12 m3 l4 workCard">
                 <div>
-                    <h5>Designing great progressive web apps</h5>
+                    <h5 class="workTitle">Bridging the designer developer gap</h5>
                 </div>
-                <p>How to better communicate through tips & tricks for a smarter workflow.</p>
+                <p class="workText">How to better communicate through tips & tricks for a smarter workflow.</p>
             </div>
+
+            <div class="">
+                <a class="btn-large hoverable talkButtons" id="seeAll">Invite me to speak</a>
+                <a class="btn-large hoverable talkButtons" id="seeAll2">Watch me speak</a>
+            </div>
+
         </div>
     </div>
 
     <!-- Connect -->
-    <div class = "connect valign-wrapper center-align">
-        <div class = "myContainer">
+    <div class="connect valign-wrapper center-align">
+        <div class="myContainer">
             <div>
-                <h1 class = "connectText">Let's connect</h1>
+                <h1 class="connectText">Let's connect</h1>
             </div>
-            <p class = "connectDescription">I'm interested in chatting about design, feel free to connect with me on any of the social platforms below.</p>
+            <p class="connectDescription">I'm interested in chatting about design, feel free to connect with me on any
+                of the social platforms below.</p>
         </div>
     </div>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="myContainer socials valign-wrapper">
+            <div class="myContainer center-align">
+                <div class="specialContainer center-align">
+                    <a href="https://twitter.com/nicolesaidy"><img src="https://nicolesaidy.com/images/twitter.svg"
+                            alt=""></a>
+                    <a href="https://linkedin.com/in/nicolesaidy"><img src="https://nicolesaidy.com/images/linkedin.svg"
+                            alt=""></a>
+                    <a href="https://behance.net/nicolesaidy"><img src="https://nicolesaidy.com/images/behance.svg"
+                            alt=""></a>
+                    <a href="https://youtube.com/nicolesaidy"><img src="https://nicolesaidy.com/images/youtube.svg"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-copyright center-align">
+            <div class="myContainer">
+                Handcrafted with <span id="heart">❤</span> by yours truly
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
         particlesJS.load('particles-js', 'particles.json', function () {
             console.log('particles working');
         })
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
     </script>
 </body>
 

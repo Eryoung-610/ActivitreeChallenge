@@ -2,14 +2,105 @@ body {
     font-family: Noto Sans JP,sans-serif;
 }
 
+.modal {
+    min-height: 100% !important;
+    width: 100% !important;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: 0 auto;
+    min-height: 100% !important;
+}
+
+#courseImage{
+    height:inherit;
+}
+
+.modalTitle{
+    font-size:27px;
+    font-weight:600;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Calibri Light,Roboto,sans-serif;
+    text-align: center;
+}
+
+.btn-floating{
+    margin-left: 90%;
+    background-color: #E8EEF2;
+}
+
+#close{
+    background-color: #E8EEF2;
+}
+
+.modalDescription .btn {
+    width:100%;
+    line-height:48px;
+    font-weight:500;
+    font-size:16px;
+    height:48px;
+    border-radius:6px;
+    background-color: #8795dd;
+    text-transform: none;
+}
+
+.modalDescription .btn:hover{
+    background-color: #8795dd;
+}
+
+.input-field{
+    /* border:1px solid #5f5f5f; */
+    border-radius:6px;
+    font-size:16px;
+    height:3em;
+}
+
+.modalDescription{
+    font-size:17px;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Calibri Light,Roboto,sans-serif;
+    color: #5f5f5f;
+    margin-bottom:20px;
+    line-height:1.5em;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 nav{
     margin-top:2em;
     line-height:36px;
 }
 
+.course-image {
+    object-fit: cover;
+    height:180px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 4px;
+}
+
 .myContainer{
     width:67%;
     margin: 0 auto;
+}
+
+.onlineText{
+    color: #27303B !important;
+    font-weight:700;
+    border-radius: 4px;
+    height:180px;
+}
+
+.onlineSubtext{
+    font-size:18px;
+    color:#a3afbf;
+}
+
+.onlineDescription{
+    color:#526173;
+    font-size: 18px;
 }
 
 nav ul a:hover {
@@ -30,13 +121,8 @@ a{
     width:36px;
 }
 
-.card{
-    height:425px !important;
-}
-
 .card-content{
-    height:500px;
-    padding-bottom: 10px;
+    height:400px !important;
 }
 
 .card-image{
@@ -51,12 +137,16 @@ a{
 }
 
 .card-description{
-    color: rgb(82,97,115);
+    color: #526173;
     line-height: 32px;
     font-size: 18px;
 }
 
 .work .firstRow {
+    margin-top: 5em;
+}
+
+.work .card {
     margin-top: 5em;
 }
 
@@ -81,13 +171,14 @@ a{
     letter-spacing: -.2px;
 }
 
-.blog, .talks{
+.blog {
     min-height: calc(100vh);
 }
 
 .seeAllbtn{
     min-height: calc(12vh);
 }
+
 .courseSection{
     font-size: 48px;
     font-weight: 700;
@@ -108,6 +199,17 @@ a{
     text-transform: none;
 }
 
+#seeAll2{
+    text-transform:none;
+    border:1px solid rgb(96,124,199);
+    border-radius:30px;
+    background-color: transparent;
+    color: rgb(96,124,199);
+    font-size:16px;
+    font-weight:600;
+    margin-left: 1em;
+}
+
 #seeAll:hover{
     transition: .45s;
     background-image: linear-gradient(-133deg,#7282eb,#7282eb);
@@ -115,6 +217,11 @@ a{
 
 .skills{
     margin-bottom:70px;
+}
+
+.workGrid{
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 .skillIcon{
@@ -163,16 +270,24 @@ a{
 }
 
 .workTitle{
+    font-size:24px;
+    line-height:34px;
+    font-weight:700;
+}
+
+.workText{
+    padding-top:1em;
+    padding-bottom:4em;
+    font-size:18px;
+}
+
+.workCover{
     padding-top: 2em;
     font-weight: 700;
     font-size:48px;
 }
 
-.workCard{
-    padding:0px;
-}
-
-.blog .talks{
+.blog, .talks{
     min-height: calc(100vh);
 }
 
@@ -195,6 +310,25 @@ h5{
     min-height: calc(94vh);
 }
 
+.socials{
+    height:5em;
+}
+
+.specialContainer{
+    width:20%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.page-footer{
+    background-color: #27303b !important;
+}
+
+.footer-copyright{
+    background-color: #1d262f !important;
+}
+
 .connectDescription{
     margin-bottom: 15px;
     line-height: 32px;
@@ -211,6 +345,14 @@ h5{
 
 .horizontal {
     height:250px !important;
+}
+
+footer {
+    min-height: calc(11vh);
+}
+
+#heart{
+    color:#99a3e8;
 }
 
 #onlineCoursePhoto{
@@ -235,7 +377,70 @@ h5{
     left:0;
 }
 
-@media (max-width: 990px) {
+.bulb-ray {
+    transition: fill .2s,transform .2s;
+    transform: scale(0)
+}
+
+#skill-ui-icon:hover .bulb-ray {
+    fill: var(--primary);
+    transform: scale(1)
+}
+
+#bulb-ray1,#bulb-ray2 {
+    transform-origin: center right
+}
+
+#bulb-ray3 {
+    transform-origin: center bottom
+}
+
+#bulb-ray4,#bulb-ray5 {
+    transform-origin: center left
+}
+
+#code-left,#code-right {
+    transition: transform .2s
+}
+
+#skill-code-icon:hover #code-left {
+    transform: translateX(-10px)
+}
+
+#skill-code-icon:hover #code-right {
+    transform: translateX(10px)
+}
+
+#board-line1,#board-line2,#board-line3 {
+    transition: transform .2s,opacity .1s
+}
+
+#skill-teacher-icon:hover #board-line1 {
+    transform: scaleX(0);
+    opacity: 0
+}
+
+#skill-teacher-icon:hover #board-line2 {
+    transform: scaleX(0);
+    transition-delay: 50ms;
+    opacity: 0
+}
+
+#skill-teacher-icon:hover #board-line3 {
+    transform: scaleX(0);
+    transition-delay: .1s;
+    opacity: 0
+}
+
+#skill-speaker-icon {
+    transition: transform .2s
+}
+
+#skill-speaker-icon:hover {
+    transform: rotate(-20deg)
+}
+
+/* @media (max-width: 990px) {
     .resizeimg {
       height: auto;
     }
@@ -246,4 +451,4 @@ h5{
       width: auto;
       height: 350px;
     }
-  }
+  } */
